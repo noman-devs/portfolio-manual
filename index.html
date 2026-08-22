@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AL NOMANUL HOQUE — Graphic Designer</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- crop marks: corner registration marks, the recurring print-production motif -->
+<div class="crop crop--tl" aria-hidden="true"></div>
+<div class="crop crop--tr" aria-hidden="true"></div>
+<div class="crop crop--bl" aria-hidden="true"></div>
+<div class="crop crop--br" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="#top" class="logo" aria-label="Jordan Vale — home">
+    <span class="logo__mark">JV</span>
+    <span class="logo__reg" aria-hidden="true">&reg;</span>
+  </a>
+
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+    <span></span><span></span><span></span>
+    <span class="nav-toggle__label">Menu</span>
+  </button>
+
+  <nav class="site-nav" id="siteNav">
+    <a href="#work" data-nav>Work</a>
+    <a href="#about" data-nav>About</a>
+    <a href="#process" data-nav>Process</a>
+    <a href="#contact" data-nav class="site-nav__cta">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>Brand &amp; Print Design — Based in Chattogram, BD</p>
+    <h1 class="hero__title">
+      <span class="hero__line">AL NOMANUL</span>
+      <span class="hero__line hero__line--outline">HOQUE</span>
+    </h1>
+    <div class="hero__foot">
+      <p class="hero__tagline">I design identities that hold up in print, on screen,<br class="br-desktop"> and everywhere in between.</p>
+      <div class="stamp" aria-hidden="true">
+        <svg viewBox="0 0 140 140" class="stamp__ring">
+          <path id="stampCircle" d="M 70,70 m -58,0 a 58,58 0 1,1 116,0 a 58,58 0 1,1 -116,0" fill="none"/>
+          <text font-size="11.5" letter-spacing="3" fill="currentColor">
+            <textPath href="#stampCircle" startOffset="0%">3 YEARS EXPERIENCE • EST. 2023 •&nbsp;</textPath>
+          </text>
+        </svg>
+        <span class="stamp__center">03</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SWATCH STRIP — doubles as category filter for the work grid -->
+  <nav class="swatches" aria-label="Filter work by category">
+    <button class="swatch is-active" data-filter="all" style="--sw:#14140F">
+      <span class="swatch__chip"></span>All Work
+    </button>
+    <button class="swatch" data-filter="identity" style="--sw:#FF4B1F">
+      <span class="swatch__chip"></span>Identity
+    </button>
+    <button class="swatch" data-filter="print" style="--sw:#0C6E5F">
+      <span class="swatch__chip"></span>Print
+    </button>
+    <button class="swatch" data-filter="packaging" style="--sw:#C9922F">
+      <span class="swatch__chip"></span>Packaging
+    </button>
+    <button class="swatch" data-filter="digital" style="--sw:#3A5CA8">
+      <span class="swatch__chip"></span>Digital
+    </button>
+  </nav>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <h2 class="section-head"><span class="section-head__no">01</span>Selected Work</h2>
+
+    <div class="grid" id="workGrid">
+
+      <article class="plate" data-cat="identity" style="--accent:#FF4B1F">
+        <div class="plate__marks" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="plate__body">
+          <p class="plate__label">Identity — 2025</p>
+          <h3 class="plate__title">Kestrel Coffee Roasters</h3>
+          <p class="plate__desc">Full brand identity for a small-batch roastery — wordmark, packaging system, and a signage kit built for market stalls and storefronts alike.</p>
+        </div>
+      </article>
+
+      <article class="plate" data-cat="print digital" style="--accent:#0C6E5F">
+        <div class="plate__marks" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="plate__body">
+          <p class="plate__label">Editorial — 2024</p>
+          <h3 class="plate__title">Fieldnotes Quarterly</h3>
+          <p class="plate__desc">Layout system for an independent print &amp; web journal — a flexible grid, a custom pull-quote treatment, and an archive-friendly type scale.</p>
+        </div>
+      </article>
+
+      <article class="plate" data-cat="packaging" style="--accent:#C9922F">
+        <div class="plate__marks" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="plate__body">
+          <p class="plate__label">Packaging — 2025</p>
+          <h3 class="plate__title">Marrow Skincare</h3>
+          <p class="plate__desc">Structural and graphic packaging for a five-product skincare line, designed to run economically across three print vendors.</p>
+        </div>
+      </article>
+
+      <article class="plate" data-cat="digital" style="--accent:#3A5CA8">
+        <div class="plate__marks" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="plate__body">
+          <p class="plate__label">Digital — 2024</p>
+          <h3 class="plate__title">Northbound App</h3>
+          <p class="plate__desc">Visual design and icon set for a hiking-route app — a trail-map-inspired UI language carried from onboarding through the map view.</p>
+        </div>
+      </article>
+
+      <article class="plate" data-cat="identity print" style="--accent:#FF4B1F">
+        <div class="plate__marks" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="plate__body">
+          <p class="plate__label">Identity &amp; Print — 2023</p>
+          <h3 class="plate__title">Amber Line Theatre</h3>
+          <p class="plate__desc">Season identity and poster series for a repertory theatre — six posters sharing one system, each recut for its own production.</p>
+        </div>
+      </article>
+
+      <article class="plate" data-cat="packaging digital" style="--accent:#0C6E5F">
+        <div class="plate__marks" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="plate__body">
+          <p class="plate__label">Packaging &amp; Digital — 2025</p>
+          <h3 class="plate__title">Loam &amp; Salt</h3>
+          <p class="plate__desc">Label system and e-commerce visuals for a small-batch condiment maker, built to photograph well at both shelf and thumbnail scale.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="grid__empty" id="gridEmpty" hidden>No plates filed under this colour yet — check back soon.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2 class="section-head"><span class="section-head__no">02</span>About</h2>
+    <div class="about__grid">
+      <div class="about__copy">
+        <p>I'm a graphic designer with three years in the field, working across brand identity, print production, and packaging — with enough digital design experience to make sure a system survives the jump from paper to screen.</p>
+        <p>My process leans on production knowledge as much as concept: I like knowing how a die-line folds, how a spot colour will actually print, and where a system will break before a client finds out. That's usually where the interesting design decisions live.</p>
+        <a href="#contact" class="text-link">Get in touch <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="about__skills">
+        <p class="about__skills-label">Toolkit</p>
+        <ul class="chips">
+          <li style="--c:#FF4B1F">Brand Identity</li>
+          <li style="--c:#0C6E5F">Typography</li>
+          <li style="--c:#C9922F">Print Production</li>
+          <li style="--c:#3A5CA8">Packaging</li>
+          <li style="--c:#FF4B1F">Art Direction</li>
+          <li style="--c:#0C6E5F">Illustration</li>
+          <li style="--c:#C9922F">Adobe Creative Cloud</li>
+          <li style="--c:#3A5CA8">Figma</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <h2 class="section-head section-head--light"><span class="section-head__no">03</span>Process</h2>
+    <ol class="steps">
+      <li class="step">
+        <span class="step__no">01</span>
+        <h3 class="step__title">Brief</h3>
+        <p class="step__desc">Understand the problem, the audience, and what "done well" actually means for this client before opening any software.</p>
+      </li>
+      <li class="step">
+        <span class="step__no">02</span>
+        <h3 class="step__title">Concept</h3>
+        <p class="step__desc">Explore wide, then narrow to two or three directions worth showing — each one a real answer, not a variation on the same idea.</p>
+      </li>
+      <li class="step">
+        <span class="step__no">03</span>
+        <h3 class="step__title">Craft</h3>
+        <p class="step__desc">Build out the chosen direction in full — type, colour, grid, and every application it needs to hold up under.</p>
+      </li>
+      <li class="step">
+        <span class="step__no">04</span>
+        <h3 class="step__title">Deliver</h3>
+        <p class="step__desc">Hand off production-ready files and clear guidelines, so the system still works after I've moved on to the next project.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2 class="section-head section-head--light"><span class="section-head__no">04</span>Contact</h2>
+    <p class="contact__lead">Have a project in mind?</p>
+    <a class="contact__email" href="mailto:hello@jordanvale.design">hello@jordanvale.design</a>
+    <div class="contact__meta">
+      <div>
+        <p class="contact__meta-label">Based in</p>
+        <p>Chattogram, Bangladesh</p>
+      </div>
+      <div>
+        <p class="contact__meta-label">Elsewhere</p>
+        <p>
+          <a href="#" data-nav>Instagram</a> ·
+          <a href="#" data-nav>Behance</a> ·
+          <a href="#" data-nav>LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Jordan Vale. All plates filed.</p>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑ Top</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
